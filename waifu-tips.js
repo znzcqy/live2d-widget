@@ -7,7 +7,7 @@ function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
 	let useCDN = false, modelList;
 	if (typeof cdnPath === "string") {
-		useCDN = true;
+		//useCDN = true;
 		if (!cdnPath.endsWith("/")) cdnPath += "/";
 	} else if (typeof apiPath === "string") {
 		if (!apiPath.endsWith("/")) apiPath += "/";
@@ -88,7 +88,7 @@ function loadWidget(config) {
 				document.getElementById("waifu-toggle").classList.add("waifu-toggle-active");
 			}, 3000);
 		});
-		const devtools = () => {};
+		const devtools = () => { };
 		console.log("%c", devtools);
 		devtools.toString = () => {
 			showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
