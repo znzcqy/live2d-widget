@@ -1,5 +1,5 @@
 // 注意：live2d_path 参数应使用绝对路径
-const live2d_path = "https://guohaomeng.github.io/live2d-widget/autoload.js";
+const live2d_path = "https://guohaomeng.github.io/live2d-widget/autoload.js/";
 //const live2d_path = "/live2d-widget/";
 
 // 封装异步加载资源的方法
@@ -52,7 +52,7 @@ console.log(`
        ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
         ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
           !,/7 '0'     ´0iソ|    |
-          |.从"    _     ,,,, / |./    |
+          |.从"     ^    ,,,, / |./    |
           ﾚ'| i＞.､,,__  _,.イ /   .i   |
             ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
               | |/i 〈|/   i  ,.ﾍ |  i  |
