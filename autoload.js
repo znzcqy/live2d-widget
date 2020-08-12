@@ -47,7 +47,27 @@ if (screen.width < 768) {
 // initWidget 第一个参数为 waifu-tips.json 的路径，第二个参数为 API 地址
 // API 后端可自行搭建，参考 https://github.com/fghrsh/live2d_api
 // 初始化看板娘会自动加载指定目录下的 waifu-tips.json
+//自动适应手机与pc
+function autoResize(){
+	var wH = window.innerHeight;
+	console.log(wH);
+	if (wH < 768) {
+		var x = document.getElementById("waifu");
+		x.style.transformOrigin = "0 100%";
+		x.style.transform = "scale(0.35)";
+	}
 
+}
+
+window.onload = function(){
+	console.log('页面加载完毕')
+	autoResize();
+
+}
+window.onresize=function(){  
+	console.log('监听变化')
+	autoResize();
+}
 console.log(`
   く__,.ヘヽ.        /  ,ー､ 〉
            ＼ ', !-─‐-i  /  /´
