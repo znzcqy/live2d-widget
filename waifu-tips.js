@@ -217,6 +217,7 @@ function loadWidget(config) {
 		} else {
 			loadlive2d("live2d", `${apiPath}get/?id=${modelId}-${modelTexturesId}`);
 			console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
+			autoResize();
 		}
 	}
 
@@ -287,4 +288,9 @@ function initWidget(config, apiPath) {
 	} else {
 		loadWidget(config);
 	}
+}
+
+window.onload = function(){
+	console.log('页面加载完毕');
+	autoResize();
 }
