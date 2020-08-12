@@ -45,11 +45,15 @@ Promise.all([
 //自动适应手机与pc
 function autoResize(){
 	var wH = window.innerWidth;
+	var x = document.getElementById("waifu");
 	console.log(wH);
 	if (wH < 768) {
-		var x = document.getElementById("waifu");
 		x.style.transformOrigin = "0 100%";
 		x.style.transform = "scale(0.35)";
+	}
+	else{
+		x.style.transformOrigin = "0 100%";
+		x.style.transform = "scale(1)";
 	}
 
 }
