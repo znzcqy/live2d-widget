@@ -33,8 +33,8 @@ Promise.all([
 ]).then(() => {
 	initWidget({
 		waifuPath: live2d_path + "waifu-tips.json",
-		apiPath: "https://live2d.fghrsh.net/api/",
-		//apiPath: "http://49.233.131.188:8086/",
+		 //apiPath: "https://live2d.fghrsh.net/api/",
+		apiPath: "https://api.zsq.im/live2d/",  //多模型api，25个角色
 		//cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 		cdnPath: false
 	});
