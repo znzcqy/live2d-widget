@@ -44,6 +44,8 @@
 	border-radius: 12px;
 	box-shadow: 0 3px 15px 2px rgba(191, 158, 118, .2);
 	font-size: 14px;
+	font-weight: bolder;
+	font-family: 微软雅黑;
 	line-height: 24px;
 	margin: -30px 20px;
 	min-height: 70px;
