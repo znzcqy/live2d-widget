@@ -46,13 +46,13 @@ Promise.all([
 function autoResize(){
 	var wH = window.innerWidth;
 	var x = document.getElementById("waifu");
-	console.log(wH);
+	// console.log(wH); //去掉没啥必要的控制台输出
 	if (wH < 768) {
-		x.style.transformOrigin = "0 100%";
+		x.style.transformOrigin = "100% 100%"; //模型缩放中心改为以右下角	
 		x.style.transform = "scale(0.35)";
 	}
 	else{
-		x.style.transformOrigin = "0 100%";
+		x.style.transformOrigin = "100% 100%"; //模型缩放中心改为以右下角
 		x.style.transform = "scale(1)";
 	}
 
